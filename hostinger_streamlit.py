@@ -5,7 +5,7 @@ import duckdb
 
 # <editor-fold desc="# --- PAGE SET UP & Light Cleaning --- #">
 # Load data
-file_path = "/Users/tadas/PycharmProjects/Hostinger/DataAnalystTaskdata.csv"
+file_path = "DataAnalystTaskdata.csv"
 df = pd.read_csv(file_path)
 
 # Clean fields
