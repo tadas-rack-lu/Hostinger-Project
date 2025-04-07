@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import duckdb
 
-# <editor-fold desc="# --- PAGE SET UP & Light Cleaning --- #">
+# --- PAGE SET UP & Light Cleaning --- #">
 # Load data
 file_path = "DataAnalystTaskdata.csv"
 df = pd.read_csv(file_path)
@@ -21,9 +21,8 @@ duckdb.register('subs', df)
 
 st.set_page_config(page_title="Hostinger Auto-Renew Project", layout="wide")
 st.title("Auto-Renew Manual Disable Breakdown")
-# </editor-fold>
 
-# <editor-fold desc="# --- NOTES & DATA PREVIEW --- #">
+# --- NOTES & DATA PREVIEW --- #
 st.subheader("Assignment Notes")
 st.markdown("""
 <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
@@ -40,7 +39,7 @@ with st.expander("Data Preview"): st.dataframe(df, hide_index=True)
 st.divider()
 
 # <editor-fold desc="# --- BAR CHARTS --- #">
-st.subheader("Basic Facts")
+st.subheader("Initial Overview of Data")
 
 # --- Bar Chart 1: Auto-Renew ON vs OFF ---
 status_df = duckdb.sql("""
