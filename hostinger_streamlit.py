@@ -30,7 +30,7 @@ st.markdown("""
     Upon initially reading the instructions, I had assumed that the subscriptions that disabled auto-renew early did not have a <code>True</code> value.
     However, because there is no value of <code>valid_to</code>, it cannot be assumed if their auto-renew was disabled or not.
     Furthermore, there are a substantial amount of subscriptions in which their <code>is_auto_renew</code> value is <code>True</code>,
-    and their auto-renew <code>valid_to</code> is earlier than <code>ended_at</code> regarding their subscription.
+    and their auto-renew <code>valid_to</code> is earlier than <code>ended_at</code> regarding their subscription. This is what I used as the basis of the data to find insights regarding when and who are disabling their auto renew.
 </div>
 """, unsafe_allow_html=True)
 st.markdown("<br>", unsafe_allow_html=True)
