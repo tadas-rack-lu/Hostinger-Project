@@ -3,6 +3,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import duckdb
 
+# --- BRIEF COMMENT --- #
+# As this project was under a time crunch, the level of comments and clarity throughout the code is, in my opinion, suboptimal, and would be made much clearer if needed to be shared with other potential users.
+
 # --- PAGE SET UP & Light Cleaning --- #">
 # Load data
 file_path = "DataAnalystTaskdata.csv"
